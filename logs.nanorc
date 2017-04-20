@@ -1,0 +1,19 @@
+syntax "logs" "[A-Za-z]{0,1}[A-Za-z0-9\._\/]{0,}log$"
+
+color green         ";|:|\{|\}|\[|\]|\.\.\.|\-\-|\(|\)"
+color brightyellow  start="\[" end="\]"
+color brightred     start="'" end="'"
+color brightblue    start="\/\*" end="\\*/"
+color cyan          start="\"GET|POST \/" end="\""
+# color brightred    start="\"" end="\"" #too much red, so not doing it
+
+# ---------------------------------
+
+syntax "cron" "^cron$"
+
+color green         ";|:|\{|\}|\[|\]|\.\.\.|\-\-"
+color brightyellow  start="\[" end="\]"
+color cyan          start="\(" end="\)"
+
+color brightred     "['`].+'"
+color brightred     "\".+\""

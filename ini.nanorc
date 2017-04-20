@@ -1,0 +1,8 @@
+syntax "log" "\.ini$"
+
+color brightgreen   start="\[" end="\]"
+color cyan          "^[A-Za-z_][A-Za-z0-9\._]*[[:space:]]*="
+color yellow         "-[A-Za-z]"
+color green         ";|:|=|,|\."
+color brightred     "\".+\""
+color brightblack   start=";" end="$"
